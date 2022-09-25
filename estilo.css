@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+body {
+    background-color: #ccc;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background: rgb(170,195,34);
+    background: linear-gradient(61deg, rgba(170,195,34,1) 0%, rgba(253,139,45,1) 100%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+.logo-img {
+    height: 70px;
+    margin-right: 15px;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #8e402a;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.movil {
+    display: flex;
+    position: relative;
+}
+
+.boton_movil {
+    padding: 0 0 1px 9px;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    color: #FFF;
+}
+
+.movil_span {
+    background-color: #FFF;
+    border-radius: 1px;
+    display: block;
+    height: 3px;
+    width: 22px;
+}
+
+.movil_span_separacion {
+    margin-top: 4px;
+}
+
+
+
+/*JUMBOTRON*/
+
+#presentacion {
+    background-image: url(/img/store.jpg);
+    min-height: 700px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#presentacion h2 {
+    color: black;
+    font-size: 60px;
+    line-height: 1.5em;
+    padding-top: 10px;
+}
+
+#presentacion h2>p {
+    color: #8e402a;
+}
+
+.seccion_catalogo {
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.seccion_catalogo>article {
+    padding: 75px 15px;
+}
+
+.seccion_catalogo>article>h2 {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: -1.28px;
+    line-height: 1;
+    text-align: center;
+    margin-top: -50px;
+    padding: 5px;
+}
+
+.seccion_catalogo>article>h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 0px;
+    text-align: center;
+    padding: 0px;
+}
+
+.ofertas {
+    margin: 50px 0px 26px;
+}
+
+.tarjeta1 {
+    position: relative;
+    color: rgb(0, 0, 0);
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    box-shadow: rgb(255 255 255) 0px 8px 0px 0px, rgb(0 0 0 / 30%) 0px 0px 8px;
+
+    grid-row: 1 / auto;
+    padding-top: 16px;
+}
+
+.seccion_catalogo>article>div img {
+    width: 200px;
+    border-radius: 20%;
+    align-items: center;
+    padding: 30px;
+    transition: all 0.3s;
+}
+
+.seccion_catalogo>article>div img:hover {
+    transform: scale(1.1);
+}
+
+.c_p {
+    background-color: rgb(255, 255, 255);
+    margin: 16px 16px 0px 0px;
+    max-width: 400px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+}
+
+.fragancia {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0px 0px 5px;
+    padding: 0px;
+}
+
+.descripcion {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0px 0px 2px;
+    text-align: justify;
+}
+
+.cantidadstock {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0px 0px 2px;
+}
+
+.divisora {
+    align-self: stretch;
+    border-color: rgb(204, 204, 204);
+    margin: auto 0px 0px;
+}
+
+.tarjeta2 {
+    box-shadow: rgb(255 255 255) 0px -9px 0px 0px, rgb(0 0 0 / 30%) 0px 0px 8px;
+    padding-bottom: 20px;
+    text-align: center;
+
+    grid-row: 3 / auto;
+
+    background-color: rgb(255, 255, 255);
+    max-width: 407px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+
+    margin: 0px 16px 0px 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.boton_compra {
+    border-radius: 500px;
+    font-size: inherit;
+    padding-block: 14px;
+    padding-inline: 32px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.tarjeta3 {
+    grid-row: 4 / auto;
+
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: rgb(255 255 255) 0px -9px 0px 0px, rgb(0 0 0 / 30%) 0px 0px 8px;
+    padding-top: 4px;
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+    margin: 0px 16px 0px 0px;
+}
+
+.parrafo4 {
+    margin-top: 12px;
+    color: rgb(83, 83, 83);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer {
+    background-color: #fff;
+}
